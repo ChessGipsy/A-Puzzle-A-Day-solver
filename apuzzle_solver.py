@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-geopuzzle_solver.py  –  calendar-puzzle exact-cover solver
+apuzzle_solver.py  –  calendar-puzzle exact-cover solver
                        (shows tries count and run-time)
 
 examples
-    python geopuzzle_solver.py July 6
-    python geopuzzle_solver.py 7 6
+    apuzzle_solver.py July 6
+    apuzzle_solver.py 7 6
 """
 
 from __future__ import annotations
