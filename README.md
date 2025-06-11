@@ -1,8 +1,6 @@
-# A-Puzzle-A-Day-solver
+# A-Puzzle-A-Day Solver 🧩📅
 
-# Geometric Calendar Puzzle Solver 🧩📅
-
-**Find an exact tiling that leaves _only_ a chosen month & day uncovered.**
+_Find an exact tiling that leaves **only one month square and one day square** uncovered._
 
 <div align="center">
   <img src="https://img.shields.io/badge/Python-3.9%2B-blue?logo=python">
@@ -11,29 +9,31 @@
 
 ## What is this?
 
-You know that wooden calendar puzzle with eight funky polyomino pieces?  
-The goal is to cover a board of 43 squares so that **exactly two—one month cell
-and one day cell—stay visible**, forming any date you choose (e.g. **6 July**).
+“A-Puzzle-A-Day” is a wooden calendar puzzle consisting of eight polyomino
+pieces and an irregular 43-cell board.  
+For any requested date (e.g. **6 July**) the goal is to place every piece so
+_that_ the month cell **July** and the day cell **6** remain visible while all
+other cells are covered.
 
-This repo contains a **drop-in Python 3 solver** that:
+This repo provides a **stand-alone Python 3 solver** that:
 
-* Accepts a date on the command line (`python geopuzzle_solver.py July 6`)
-* Finds a valid tiling (if one exists) using Algorithm X (exact cover)
-* Prints:
-  * Machine-readable placement data
-  * An ASCII drawing of the fitted board
-  * Search statistics (tries + run-time)
+* accepts a date on the command line  
+  `python apuzzle_solver.py July 6`
+* searches for a valid tiling (Algorithm X / exact cover)
+* prints
+  * machine-readable placement data
+  * an ASCII drawing of the finished board
+  * statistics (number of tries, elapsed time)
 
-No external dependencies, pure standard-library code.
+No external dependencies — pure standard library.
 
 ---
 
 ## Quick start
 
 ```bash
-# Clone and run (requires Python 3.9+)
-git clone https://github.com/<your-user>/geometric-calendar-solver.git
-cd geometric-calendar-solver
+git clone https://github.com/<your-user>/A-Puzzle-A-Day-solver.git
+cd A-Puzzle-A-Day-solver
 
-python geopuzzle_solver.py July 6      # month spelled out
-python geopuzzle_solver.py 7 6         # or numeric month
+python apuzzle_solver.py July 6     # spelled-out month
+python apuzzle_solver.py 7 6        # numeric month
